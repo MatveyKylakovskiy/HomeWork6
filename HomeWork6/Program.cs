@@ -43,4 +43,22 @@ nokia.SendMessage(12323, 45664, 4568746);
 
 //Second task
 
+using HomeWork6;
 
+var myBank = new CreditCard(030420245, 0);
+var visaBank = new CreditCard(020420246, 100);
+var masterBank = new CreditCard(01022023, 500.1);
+
+myBank.GetInfo();
+visaBank.GetInfo();
+masterBank.GetInfo();
+
+Console.WriteLine("\nAccount transactions\n");
+
+myBank.MakeDeposit(15);
+visaBank.MakeDeposit(-15);
+masterBank.SpendMoney(2);
+
+myBank.GetInfo();
+visaBank.GetInfo();
+masterBank.GetInfo();
